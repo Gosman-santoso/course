@@ -1,5 +1,7 @@
 $primary-color: #25bb8d;
 
+// ----------------------------- navbar
+
 .navbar-section {
   width: 100%;
   height: 5em;
@@ -48,6 +50,8 @@ $primary-color: #25bb8d;
   height: 4em;
   box-shadow: 0 5px 5px -3px #eaeaea;
 }
+
+// ----------------------------- hero
 
 .hero-section {
   width: 100%;
@@ -105,6 +109,8 @@ $primary-color: #25bb8d;
   }
 }
 
+// ----------------------------- about
+
 .about-section {
   width: 100%;
 
@@ -121,16 +127,17 @@ $primary-color: #25bb8d;
 
     p.text-description {
       margin: 3em 0;
+      margin-bottom: 0;
     }
 
     .box-image {
       width: 30em;
-      height: 15em;
+      height: 20em;
       overflow: hidden;
-      border-radius: 10px;
 
       img {
         width: 100%;
+        border-radius: 10px;
       }
     }
 
@@ -166,6 +173,84 @@ $primary-color: #25bb8d;
   }
 }
 
+// ----------------------------- popular course
+.course-section {
+  width: 100%;
+  margin-bottom: 5em;
+
+  .course {
+    width: 80%;
+    margin: auto;
+
+    p.text-description {
+      margin-top: 1rem;
+      margin-bottom: 3em;
+      width: 40em;
+      line-height: 28px;
+      word-spacing: 2px;
+    }
+
+    .card {
+      height: 26em;
+      box-shadow: 0px 5px 15px -1px #e0e0e0;
+      padding: 1.5rem;
+      transform: scale(0.85);
+      position: relative;
+
+      h5 {
+        line-height: 30px;
+        word-spacing: 2px;
+      }
+
+      .status {
+        color: $primary-color;
+        font-size: 0.9rem;
+        align-self: flex-end;
+      }
+
+      .card-image {
+        width: 100%;
+        height: 50%;
+        overflow: hidden;
+
+        img {
+          border-radius: 5px;
+          width: 100%;
+        }
+      }
+
+      .seperate {
+        width: 87%;
+        margin: auto;
+        margin-top: 1em;
+        border-top: 2px solid $primary-color;
+        position: absolute;
+        bottom: 2rem;
+        right: 0;
+        left: 0;
+        padding-top: 10px;
+
+        .rating {
+          width: 40%;
+
+          i {
+            font-size: 20px;
+            color: orange;
+            margin: 0 3px;
+          }
+        }
+
+        .fa-chevron-circle-right {
+          font-size: 30px;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+// ----------------------------- footer
+
 .footer-section {
   width: 100%;
   height: 10em;
@@ -180,6 +265,7 @@ $primary-color: #25bb8d;
   }
 }
 
+// responsive
 @media only screen and (max-width: 576px) {
   html,
   body {
