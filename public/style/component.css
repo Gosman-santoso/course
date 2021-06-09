@@ -66,14 +66,13 @@
 .hero-section .hero p.text-description {
   display: inline-block;
   width: 40em;
-  margin-top: 2em;
+  margin: 2em 0;
   line-height: 28px;
   word-spacing: 2px;
 }
 
 .hero-section .hero .search-section {
   width: 50%;
-  margin-top: 2rem;
 }
 
 .hero-section .hero .search-section .search {
@@ -123,6 +122,10 @@
 .about-section .about p {
   line-height: 28px;
   word-spacing: 2px;
+}
+
+.about-section .about p.text-description {
+  margin: 3em 0;
 }
 
 .about-section .about .box-image {
@@ -182,5 +185,49 @@
 .footer-section .footer {
   width: 90%;
   margin: auto;
+}
+
+@media only screen and (max-width: 576px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .navbar-section ul {
+    display: none;
+  }
+  .navbar-section .navbar-title {
+    font-size: 1rem;
+  }
+  .navbar-section .login-register a {
+    margin: 0 !important;
+  }
+  .hero-section .hero h1.text-hero,
+  .hero-section .hero p.text-description {
+    width: 100%;
+  }
+  .hero-section .hero p.text-description {
+    margin: 4em 0;
+  }
+  .hero-section .hero h1.text-hero {
+    font-size: 1.5rem;
+  }
+  .hero-section .hero .search-section {
+    width: 80%;
+  }
+  .about-section {
+    margin-top: 3em;
+  }
+  .about-section .about p.text-description {
+    margin: 1rem 0;
+  }
+  .about-section .about .box-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+  .about-section .about .card {
+    -webkit-box-shadow: 0px 5px 15px -1px #e0e0e0;
+            box-shadow: 0px 5px 15px -1px #e0e0e0;
+  }
 }
 /*# sourceMappingURL=component.css.map */
