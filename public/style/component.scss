@@ -6,6 +6,9 @@ $primary-color: #25bb8d;
   padding: 0.5em 0;
   position: fixed;
   top: 0;
+  z-index: 99;
+  background: white;
+  transition: 0.3s;
 
   .navbar {
     width: 90%;
@@ -39,6 +42,11 @@ $primary-color: #25bb8d;
       }
     }
   }
+}
+
+.navbar-section.scrolled {
+  height: 4em;
+  box-shadow: 0 5px 5px -3px #eaeaea;
 }
 
 .hero-section {
@@ -93,6 +101,63 @@ $primary-color: #25bb8d;
           border: none;
           border-radius: 3px;
         }
+      }
+    }
+  }
+}
+
+.about-section {
+  width: 100%;
+
+  .about {
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    padding-bottom: 5em;
+
+    p {
+      line-height: 28px;
+      word-spacing: 2px;
+    }
+
+    .box-image {
+      width: 30em;
+      height: 15em;
+      overflow: hidden;
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .card {
+      padding: 2rem;
+      transform: scale(0.92);
+      border-radius: 15px;
+      transition: 0.3s;
+      box-shadow: 0px 0px 26px 3px #e0e0e0;
+
+      .card-logo {
+        margin-bottom: 5px;
+        font-size: 2.3rem;
+        border-radius: 50%;
+        padding: 13px;
+        background: rgb(223, 223, 223);
+        align-self: flex-start;
+      }
+    }
+
+    .card:hover {
+      background-color: $primary-color;
+
+      .card-logo {
+        color: $primary-color;
+        background-color: white;
+      }
+
+      p {
+        color: white;
       }
     }
   }

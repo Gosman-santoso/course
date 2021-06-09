@@ -7,11 +7,17 @@ html {
   box-sizing: border-box;
   color: rgb(24, 24, 24);
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   position: relative;
+}
+
+::selection {
+  color: whitesmoke;
+  background: $primary-color;
 }
 
 .w-100 {
@@ -108,6 +114,18 @@ body {
 
 .align-items-end {
   align-items: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
 }
 
 .row {

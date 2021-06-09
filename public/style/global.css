@@ -6,11 +6,22 @@ html {
           box-sizing: border-box;
   color: #181818;
   font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
   min-height: 100vh;
   position: relative;
+}
+
+::-moz-selection {
+  color: whitesmoke;
+  background: #25bb8d;
+}
+
+::selection {
+  color: whitesmoke;
+  background: #25bb8d;
 }
 
 .w-100 {
@@ -124,6 +135,22 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+
+.align-self-center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.align-self-start {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.align-self-end {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .row {

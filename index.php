@@ -10,7 +10,7 @@
   <!-- hero -->
   <?php include_once('component/landing/hero.php'); ?>
   <!-- about -->
-  <?php include_once('component/landing/hero.php'); ?>
+  <?php include_once('component/landing/about.php'); ?>
 
   <!-- script -->
   <?php include_once('component/script.php'); ?>
