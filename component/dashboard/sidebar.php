@@ -21,8 +21,13 @@ $titles = [
     "fa-headset"
   ],
   [
-    "logout",
-    "logout.php",
+    "setting",
+    "setting-admin.php",
+    "fa-cog"
+  ],
+  [
+    "kembali",
+    "index.php",
     "fa-sign-out-alt"
   ]
 ];
@@ -31,7 +36,9 @@ $titles = [
 <div class="sidebar-section">
   <div class="sidebar d-flex flex-column">
     <div class="logo-container d-flex">
-      <h1 class="col-6 col-md-4 col-lg-4 navbar-title d-flex align-items-center lengthMd3" style="color: white;"><span class="color-primary">Nama</span> Course</h1>
+      <a href="index.php" class="col-6 col-md-4 col-lg-4 navbar-title d-flex align-items-center" style="white-space: nowrap">
+        <h1 class="lengthMd3" style="color: white;"><span class="color-primary">Nama</span> Course</h1>
+      </a>
     </div>
     <div class="list-container d-flex justify-content-between flex-column">
       <?php foreach ($titles as $title) : ?>

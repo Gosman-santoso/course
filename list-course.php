@@ -1,3 +1,5 @@
+<?php require "component/auth.php" ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,8 +9,15 @@
 </head>
 
 <body>
-  <?php include_once('component/dashboard/sidebar.php'); ?>
+  <div class="d-flex">
+    <?php include_once('component/dashboard/sidebar.php'); ?>
+    <div class="dashboard-layout">
+      <h1>Course Menu</h1>
 
+      <!-- tulis disini -->
+
+    </div>
+  </div>
   <?php include_once('component/script.php') ?>
 </body>
 

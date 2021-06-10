@@ -25,11 +25,11 @@ $isLogin = isset($_SESSION["login"]);
         <a href="login.php" class="color-primary text-decoration-none">Login</a>
         <a href="register.php" class="color-primary text-decoration-none border-button">Register</a>
       <?php } else if ($_SESSION["status"] == "user") { ?>
-        <a href="logout.php" class="color-primary text-decoration-none">Logout</a>
+        <a href="logout.php" class="color-primary text-decoration-none" onclick="confirm('Apakah anda yakin?')">Logout</a>
 
       <?php } else if ($_SESSION["status"] == "admin") { ?>
         <a href="dashboard.php" class="color-primary text-decoration-none">Dashboard</a>
-        <a href="logout.php" class="color-primary text-decoration-none">Logout</a>
+        <a href="logout.php" class="color-primary text-decoration-none" onclick="confirm('Apakah anda yakin?')">Logout</a>
       <?php } ?>
     </div>
 

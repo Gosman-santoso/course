@@ -11,8 +11,8 @@
 <body>
   <div class="d-flex">
     <?php include_once('component/dashboard/sidebar.php'); ?>
-    <div class="dashboard-layout ">
-      <h1>Admin Menu</h1>
+    <div class="dashboard-layout">
+      <h1>Setting Menu</h1>
 
       <!-- tulis disini -->
 

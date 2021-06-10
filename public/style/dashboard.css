@@ -1,7 +1,7 @@
 .sidebar-section {
   position: relative;
   left: 0;
-  width: 15em;
+  width: 18%;
   min-height: 100vh;
   height: 100%;
 }
@@ -48,5 +48,9 @@
 
 .sidebar-section .sidebar .list-container .list:hover {
   background: #25bb8d;
+}
+
+.dashboard-layout {
+  padding: 2em;
 }
 /*# sourceMappingURL=dashboard.css.map */

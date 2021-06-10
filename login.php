@@ -19,7 +19,8 @@ if (isset($_POST["login"])) {
 
       $_SESSION["login"] = true;
       $_SESSION["id"] = $row["id"];
-      $_SESSION["name"] = $row["gmail"];
+      $_SESSION["name"] = $row["name"];
+      $_SESSION["gmail"] = $row["gmail"];
       $_SESSION["status"] = $row["status"];
 
       header("Location: index.php");
