@@ -1,0 +1,52 @@
+.sidebar-section {
+  position: relative;
+  left: 0;
+  width: 15em;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.sidebar-section .sidebar {
+  width: 100%;
+  padding: 0px 1em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: #161b29;
+}
+
+.sidebar-section .sidebar .logo-container {
+  width: 100%;
+  height: 5em;
+}
+
+.sidebar-section .sidebar .list-container {
+  margin-top: 3em;
+  height: 60%;
+}
+
+.sidebar-section .sidebar .list-container .list {
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  padding: 0.8rem;
+  border-radius: 3px;
+}
+
+.sidebar-section .sidebar .list-container .list i {
+  font-size: 30px;
+  width: 40px;
+  color: inherit;
+  margin-right: 0.5rem;
+}
+
+.sidebar-section .sidebar .list-container .list p {
+  color: inherit;
+  width: auto;
+}
+
+.sidebar-section .sidebar .list-container .list:hover {
+  background: #25bb8d;
+}
+/*# sourceMappingURL=dashboard.css.map */

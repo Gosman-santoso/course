@@ -131,7 +131,7 @@ $primary-color: #25bb8d;
     }
 
     .box-image {
-      width: 30em;
+      width: 100%;
       height: 20em;
       overflow: hidden;
 
@@ -184,7 +184,6 @@ $primary-color: #25bb8d;
 
     p.text-description {
       margin-top: 1rem;
-      margin-bottom: 3em;
       width: 40em;
       line-height: 28px;
       word-spacing: 2px;
@@ -323,6 +322,40 @@ $primary-color: #25bb8d;
 
       .card {
         box-shadow: 0px 5px 15px -1px #e0e0e0;
+      }
+    }
+  }
+
+  .course-section {
+    .course {
+      p.text-description {
+        width: 100%;
+      }
+
+      .card {
+        height: 18em;
+        .card-image {
+          height: 5.5em;
+        }
+        .tag {
+          margin: 0.5rem 0;
+          font-size: 0.9rem;
+        }
+        h5.title {
+          font-size: 0.9rem;
+          line-height: 20px;
+          word-spacing: 0;
+        }
+        .seperate {
+          width: 82%;
+          bottom: 1em;
+          .rating {
+            i {
+              font-size: 10px;
+              margin: 0;
+            }
+          }
+        }
       }
     }
   }

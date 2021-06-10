@@ -20,7 +20,7 @@ if (!$data) {
             <img src="public/img/thumbnail/<?= $row["cover"] ?>" alt="cover">
           </div>
           <p class="tag">Education</p>
-          <h5 class="lengthMd1 text-capitalize text-overflow dot-3"><?= $row["title"] ?></h5>
+          <h5 class="lengthMd1 text-capitalize text-overflow dot-2 title"><?= $row["title"] ?></h5>
           <p class="lengthSm3 text-capitalize status">Online class</p>
           <div class="seperate d-flex justify-content-between align-items-center">
             <div class="rating d-flex">
