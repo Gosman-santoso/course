@@ -1,4 +1,12 @@
-<?php require "component/auth.php" ?>
+<?php
+require "connect.php";
+require "component/auth.php";
+
+$adminId = $_SESSION['admin_id'];
+$firstName = explode(" ", $_SESSION['name']);
+?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +24,9 @@
       <h1>Dashboard Menu</h1>
 
       <!-- tulis disini -->
-
+      <div>
+        <h3 class="text-capitalize">Hai, <?= $firstName[0] ?></h3>
+      </div>
     </div>
 
   </div>

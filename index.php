@@ -1,13 +1,5 @@
 <?php
-session_start();
 include_once('component/navbar.php');
-
-if (!isset($_SESSION["login"])) {
-  $isLoginUser = false;
-} else {
-  $isLoginUser = true;
-  echo $_SESSION["login"];
-}
 
 ?>
 

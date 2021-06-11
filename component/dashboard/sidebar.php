@@ -36,7 +36,7 @@ $titles = [
 <div class="sidebar-section">
   <div class="sidebar d-flex flex-column">
     <div class="logo-container d-flex">
-      <a href="index.php" class="col-6 col-md-4 col-lg-4 navbar-title d-flex align-items-center" style="white-space: nowrap">
+      <a href="index.php" class="col-6 col-md-4 col-lg-4 navbar-title d-flex align-items-center text-decoration-none" style="white-space: nowrap">
         <h1 class="lengthMd3" style="color: white;"><span class="color-primary">Nama</span> Course</h1>
       </a>
     </div>

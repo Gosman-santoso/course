@@ -204,6 +204,12 @@
 .course-section .course .card h5 {
   line-height: 30px;
   word-spacing: 2px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.course-section .course .card h5:hover {
+  background: #e0ffbd;
 }
 
 .course-section .course .card .status {
@@ -263,6 +269,29 @@
 .footer-section .footer {
   width: 90%;
   margin: auto;
+}
+
+.detail-section {
+  width: 100%;
+  margin: auto;
+}
+
+.detail-section .detail {
+  width: 80%;
+  min-height: 100vh;
+  margin: auto;
+  margin-top: 5em;
+}
+
+.detail-section .detail .img-container {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5em;
+}
+
+.detail-section .detail .img-container img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 @media only screen and (max-width: 576px) {

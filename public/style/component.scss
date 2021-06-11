@@ -199,6 +199,11 @@ $primary-color: #25bb8d;
       h5 {
         line-height: 30px;
         word-spacing: 2px;
+        transition: 0.2s;
+      }
+
+      h5:hover {
+        background: #e0ffbd;
       }
 
       .status {
@@ -261,6 +266,29 @@ $primary-color: #25bb8d;
   .footer {
     width: 90%;
     margin: auto;
+  }
+}
+
+// ----------------------------- detail
+.detail-section {
+  width: 100%;
+  margin: auto;
+
+  .detail {
+    width: 80%;
+    min-height: 100vh;
+    margin: auto;
+    margin-top: 5em;
+
+    .img-container {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5em;
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+    }
   }
 }
 
