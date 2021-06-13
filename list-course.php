@@ -25,7 +25,7 @@ $result = mysqli_query($connect, $query);
   <div class="d-flex" style="max-height: 99.9vh; overflow: hidden">
     <?php include_once('component/dashboard/sidebar.php'); ?>
     <div class="dashboard-layout">
-      <h1>Course Menu</h1>
+      <h1>Add New Course</h1>
 
       <!-- tulis disini -->
       <form action="" method="post" enctype="multipart/form-data" style="margin-bottom: 7em;">
@@ -54,10 +54,10 @@ $result = mysqli_query($connect, $query);
             <label for="title">Title</label>
             <input autocomplete="off" type="text" name="title" id="title" required>
           </div>
+          <label for="editor">Content</label>
+          <textarea name="editor" id="editor"></textarea>
+          <button type="submit" name="submit" class="btn-submit" style="margin-top: 2em">Submit</button>
         </div>
-        <label for="editor">Content</label>
-        <textarea name="editor" id="editor"></textarea>
-        <button type="submit" name="submit" class="btn-submit">Submit</button>
       </form>
 
     </div>

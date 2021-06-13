@@ -4,6 +4,9 @@ require "component/auth.php";
 
 $adminId = $_SESSION['admin_id'];
 $firstName = explode(" ", $_SESSION['name']);
+
+
+
 ?>
 
 
@@ -25,7 +28,7 @@ $firstName = explode(" ", $_SESSION['name']);
 
       <!-- tulis disini -->
       <div>
-        <h3 class="text-capitalize">Hai, <?= $firstName[0] ?></h3>
+
       </div>
     </div>
 

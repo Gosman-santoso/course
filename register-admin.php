@@ -16,11 +16,14 @@ if (isset($_POST["login"])) {
 
 <head>
   <?php include_once('component/head.php'); ?>
+  <title>Register</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div style="width: 40%; margin: auto;">
-    <form action="" method="post" class="d-flex flex-column">
+  <div class="container">
+    <h1>Register</h1>
+    <form action="" method="post">
       <label for="username">Username</label>
       <input type="text" name="username" id="username" required>
       <label for="password">Password</label>

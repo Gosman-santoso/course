@@ -15,7 +15,6 @@ if (isset($_POST["login"])) {
 <html>
 
 <head>
-    <?php include('component/head.php') ?>
     <title> Register </title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +22,7 @@ if (isset($_POST["login"])) {
 <body>
     <div class="container">
         <h1> Register </h1>
-        <form action="" method="post">
+        <form>
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required>
             <label for="password">Password</label>

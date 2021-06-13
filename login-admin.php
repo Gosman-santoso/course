@@ -42,19 +42,20 @@ if (isset($_POST["login"])) {
 
 <head>
   <?php include_once('component/head.php'); ?>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Login Admin</h1>
-  <form action="" method="post">
-    <div class="d-flex flex-column" style="width: 10em;">
+  <div class="container">
+    <h1>Login Admin</h1>
+    <form action="" method="post">
       <label for="username">Username</label>
       <input type="text" name="username" id="username" required>
       <label for="password">Password</label>
       <input type="text" name="password" id="password" required>
       <button name="login">Submit</button>
-    </div>
-  </form>
+    </form>
+  </div>
 </body>
 
 </html>
