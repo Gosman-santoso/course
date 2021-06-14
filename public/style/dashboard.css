@@ -79,4 +79,25 @@
   outline: none;
   border: 1.5px solid #25bb8d;
 }
+
+.dashboard-layout .dashboard {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.dashboard-layout .dashboard .card {
+  height: 10em;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 1px 5px #dedede;
+          box-shadow: 0px 3px 1px 5px #dedede;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.dashboard-layout .dashboard .card i {
+  font-size: 6rem;
+  margin-right: 20px;
+}
 /*# sourceMappingURL=dashboard.css.map */

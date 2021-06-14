@@ -100,3 +100,28 @@ function upload($courseId, $dataImg)
   move_uploaded_file($tmp, 'public/img/thumbnail/' . $newName);
   return $newName;
 }
+
+function uploadUserAdmin($dataImg)
+{
+  $name = $dataImg["photo"]["name"];
+  $error = $dataImg["photo"]["error"];
+  $tmp = $dataImg["photo"]["tmp_name"];
+
+  if ($error === 4) {
+    echo "<script>alert('Pilih gambar terlebih dahulu');</script>";
+    return false;
+  }
+
+  $extention = ['jpg', 'jpeg', 'png'];
+  $extentionImage = explode('.', $name);
+  $extentionImage = strtolower(end($extentionImage));
+  if (!in_array($extentionImage, $extention)) {
+    echo "<script>alert('Tipe gambar tidak valid!');</script>";
+    return false;
+  }
+
+  $newName = 'profile-' . rand(1000, 9999) . $extentionImage;
+
+  move_uploaded_file($tmp, 'public/img/photo/' . $newName);
+  return $newName;
+}

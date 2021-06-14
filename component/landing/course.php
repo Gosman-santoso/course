@@ -1,24 +1,15 @@
 <?php
 include "connect.php";
 
-// session_start();
-// if (!isset($_SESSION["login"])) {
-//   header("Location: index.php");
-//   exit;
-// } else if (isset($_SESSION["login"])) {
-//   if ($_SESSION["status"] !== "admin") {
-//     header("Location: authentication.php");
-//     exit;
-//   }
-// }
+// pilih kursus database dengan status 1
+// status 1 artinya user harus login terlebih dahulu
+// status 0 tidak perlu login
+// urut berdasarkan tanggal yang paling baru
+// limit data sampai 6
 
 $query = "SELECT * FROM `course` WHERE status = 1 ORDER BY `course`.`post_date` DESC LIMIT 0,6";
-$data = mysqli_query($connect, $query);
 
-if (!$data) {
-  printf("Error", mysqli_error($connect));
-  exit();
-}
+$data = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
 ?>
 

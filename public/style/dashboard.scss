@@ -76,4 +76,23 @@ $primary-color: #25bb8d;
     outline: none;
     border: 1.5px solid $primary-color;
   }
+
+  .dashboard {
+    width: 100%;
+    margin-top: 1em;
+
+    .card {
+      height: 10em;
+      border-radius: 5px;
+      box-shadow: 0px 3px 1px 5px #dedede;
+      transform: scale(0.95);
+      margin-bottom: 1em;
+      padding: 1em;
+
+      i {
+        font-size: 6rem;
+        margin-right: 20px;
+      }
+    }
+  }
 }

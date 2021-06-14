@@ -57,7 +57,7 @@ $result = mysqli_query($connect, $query);
             <td><?php echo $row['gender'] == 1 ? 'Male' : 'Female' ?></td>
             <td><?= $row['telp'] ?></td>
             <td class="cursor-pointer"><a href="edit-user.php?id=<?= $row['id'] ?>&name=<?= $row['username'] ?>"><img src="public/img/icons8_Edit_30px.png" alt=""></a></td>
-            <td class="cursor-pointer"><img src="public/img/icons8_delete_bin_30px.png" alt=""></td>
+            <td class="cursor-pointer"><a href="delete.php?file=list-user&table=user&id=<?= $row['id'] ?>"><img src="public/img/icons8_delete_bin_30px.png" alt=""></a></td>
           </tr>
         <?php $index++;
         endwhile; ?>

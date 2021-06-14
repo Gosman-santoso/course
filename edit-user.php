@@ -20,7 +20,7 @@ if (isset($_POST['submit'])) {
   if ($_FILES['photo']['error'] === 4) {
     $foto = $fotoLama;
   } else {
-    $foto = upload();
+    $foto = uploadUserAdmin($_FILES);
   }
 
   $query = "update user set username='$username', gmail='$gmail', gender='$gender', telp='$telp', photo='$foto' where id='$userId'";
