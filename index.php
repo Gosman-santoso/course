@@ -16,7 +16,9 @@ include_once('component/navbar.php');
   <?php include_once('component/landing/hero.php'); ?>
   <!-- about -->
   <?php include_once('component/landing/about.php'); ?>
-  <!-- popular course -->
+  <!-- free course -->
+  <?php include_once('component/landing/free-course.php'); ?>
+  <!-- login course -->
   <?php include_once('component/landing/course.php'); ?>
 
   <!-- script -->

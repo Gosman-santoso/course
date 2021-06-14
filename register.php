@@ -34,10 +34,14 @@ if (isset($_POST["login"])) {
             <input type="number" name="telp" id="telp" required>
 
             <div>
-                <input type="radio" id="male" name="gender" value="1" required>
-                <label for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="0" required>
-                <label for="female">Female</label>
+                <div class="d-flex">
+                    <label style="width: 20px" for="male">Male</label>
+                    <input class="cursor-pointer" style="margin-top: 5px;" type="radio" id="male" name="gender" value="1" required>
+                </div>
+                <div class="d-flex">
+                    <label style="width: 20px" for="female">Female</label>
+                    <input class="cursor-pointer" style="margin-top: 5px;" type="radio" id="female" name="gender" value="0" required>
+                </div>
             </div>
 
             <input type="hidden" name="photo" id="photo">
@@ -45,7 +49,7 @@ if (isset($_POST["login"])) {
 
             <button name="login">Register</button>
             <p>
-                Don't have an account? <a href="login.php"> Login </a>
+                Already have an account? <a href="login.php"> Login </a>
             </p>
         </form>
     </div>

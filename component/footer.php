@@ -1,5 +1,5 @@
-<div class="footer-section">
-  <div class="footer">
-    <!-- <h1>Footer</h1> -->
+<div class="footer-section d-flex align-items-center">
+  <div class="footer d-flex justify-content-center align-items-center">
+    <p style="color: whitesmoke">&#9400; Copyright 2021</p>
   </div>
   <div>

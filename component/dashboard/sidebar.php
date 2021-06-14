@@ -21,11 +21,6 @@ $titles = [
     "fa-headset"
   ],
   [
-    "setting",
-    "setting-admin.php",
-    "fa-cog"
-  ],
-  [
     "kembali",
     "index.php",
     "fa-sign-out-alt"

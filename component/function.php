@@ -57,11 +57,12 @@ function ckeditor($data, $dataImg)
   $cover = upload($courseId, $dataImg);
   $linkVideo = $data['link_video'];
   $tanggal = date('Y-m-d', strtotime($data['date']));
+  $status = $data['status'];
 
   if (!empty($editorContent) || $cover) {
     // $query = "UPDATE `course` SET `description` = '" . $editorContent . "' WHERE `course`.`id` = $idContent";
     // $query = "UPDATE `course` SET `description` = '" . $description . "' WHERE `course`.`id` = $idContent";
-    $query = "INSERT INTO `course` VALUES ('', '$courseId', '$adminId', '$title', '$description', 0, '$cover', '$linkVideo', '$tanggal')";
+    $query = "INSERT INTO `course` VALUES ('', '$courseId', '$adminId', '$title', '$description', 0, '$cover', '$linkVideo', '$tanggal', '$status')";
 
     $insert = mysqli_query($connect, $query) or die(mysqli_error($connect));
 

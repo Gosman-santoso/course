@@ -1,4 +1,5 @@
 <?php
+require "component/auth.php";
 require "connect.php";
 require "component/function.php";
 
@@ -46,13 +47,13 @@ if (isset($_POST['submit'])) {
       <div>
         <form action="" method="post" style="width: 70%" enctype="multipart/form-data">
           <label for="username">Username</label>
-          <input type="text" name="username" id="username" value="<?= $row['username'] ?>" required>
+          <input type="text" name="username" id="username" value="<?= $row['username'] ?>">
           <label for="gmail">gmail</label>
-          <input type="text" name="gmail" id="gmail" value="<?= $row['gmail'] ?>" required>
+          <input type="text" name="gmail" id="gmail" value="<?= $row['gmail'] ?>">
           <label for="gender">gender</label>
-          <input type="text" name="gender" id="gender" value="<?= $row['gender'] ?>" required>
+          <input type="text" name="gender" id="gender" value="<?= $row['gender'] ?>">
           <label for="telp">telp</label>
-          <input type="text" name="telp" id="telp" value="<?= $row['telp'] ?>" required>
+          <input type="text" name="telp" id="telp" value="<?= $row['telp'] ?>">
 
           <p style="margin-top: 10px;">Old photo : <?= $row["photo"] ?></p>
           <img src="public/img/photo/<?= $row['photo'] ?>" alt="" width="50" height="50"> <br>

@@ -2,6 +2,7 @@
 require "connect.php";
 include_once('component/navbar.php');
 
+
 $title = $_GET["id"];
 $query = "SELECT * from course WHERE id=$title";
 $result = mysqli_query($connect, $query);
@@ -12,6 +13,10 @@ $queryAdmin = "SELECT * FROM admin WHERE admin_id='$adminId' ";
 $resultAdmin = mysqli_query($connect, $queryAdmin);
 $rowAdmin = mysqli_fetch_array($resultAdmin);
 
+if (!isset($_SESSION["login"]) && $row['status'] == 1) {
+  header("Location: authentication.php");
+  exit;
+}
 
 ?>
 <!DOCTYPE html>
@@ -44,9 +49,8 @@ $rowAdmin = mysqli_fetch_array($resultAdmin);
 
         <div class="content" style="margin-bottom: 3em;">
 
-          <h4>Inserted Content</h4>
+          <h4>Description</h4>
           <p style="line-height: 26px; word-spacing: 3px; font-size: 16px"><?= $row["description"]; ?></p>
-
         </div>
 
       </div>
