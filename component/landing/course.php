@@ -20,9 +20,9 @@ $data = mysqli_query($connect, $query) or die(mysqli_error($connect));
     <p class="lengthMd1 text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nulla cum voluptate optio assumenda voluptatum libero voluptatem nemo sit cupiditate.</p>
 
     <div class="row">
-      <?php
 
-      while ($row = mysqli_fetch_array($data)) : ?>
+      <!-- menampilkan kursus yang mengharuskan login -->
+      <?php while ($row = mysqli_fetch_array($data)) : ?>
         <div class="col-6 col-md-4 col-lg-4 card">
           <div class="card-image">
             <img src="public/img/thumbnail/<?= $row["cover"] ?>" alt="cover">

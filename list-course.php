@@ -4,9 +4,10 @@ require "connect.php";
 
 $idAdmin = $_SESSION['admin_id'];
 
+// mengambil data kursus bagi admin yang sudah mempunyai akun kursus
+
 $query = "SELECT * FROM course WHERE admin_id = '$idAdmin' ORDER BY `course`.`course_id` ASC";
 $result = mysqli_query($connect, $query) or die(mysqli_error($connect));
-
 
 ?>
 
@@ -46,8 +47,6 @@ $result = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
       <p style="margin: 20px 0;"><a href="add-course.php">Add new course</a></p>
 
-      <!-- tulis disini -->
-
       <?php
       if (!$row = mysqli_fetch_array($result) || count($row) < 1) {
       ?>
@@ -66,6 +65,7 @@ $result = mysqli_query($connect, $query) or die(mysqli_error($connect));
           <th>Post Date</th>
           <th colspan="2">Action</th>
 
+          <!-- menampilkan data kursus -->
           <?php $index = 1;
           while ($row = mysqli_fetch_array($result)) : ?>
             <tr>

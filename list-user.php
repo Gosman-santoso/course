@@ -2,6 +2,7 @@
 require "component/auth.php";
 require "connect.php";
 
+// mengambil data user
 $query = "SELECT * FROM user";
 $result = mysqli_query($connect, $query);
 
@@ -47,6 +48,7 @@ $result = mysqli_query($connect, $query);
         <th>Telp</th>
         <th colspan="2">Action</th>
 
+        <!-- menampilkan data user -->
         <?php $index = 1;
         while ($row = mysqli_fetch_array($result)) : ?>
           <tr>
