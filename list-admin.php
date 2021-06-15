@@ -125,7 +125,7 @@ if (isset($_POST['submit'])) {
       <!-- tulis disini -->
       <div class="w-100" style="border: 2px solid #25bb8d; margin-top: 2em; padding: 1em; border-radius: 5px; position: relative;">
         <div class="row" style="width: 70%; margin: auto;">
-          <div class="col-6">
+          <div class="col-6 d-flex align-items-center ">
             <img src="public/img/photo/<?= $row['photo'] ?>" alt="profile" width="200">
           </div>
           <div class="col-6">
