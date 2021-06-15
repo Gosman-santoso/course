@@ -52,7 +52,7 @@ if (isset($_POST["login"])) {
       <label for="username">Username</label>
       <input type="text" name="username" id="username" required>
       <label for="password">Password</label>
-      <input type="text" name="password" id="password" required>
+      <input type="password" name="password" id="password" required>
       <button name="login">Submit</button>
     </form>
     <p>Don't have an account? <a href="register-admin.php"> Register </a></p>

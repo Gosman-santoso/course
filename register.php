@@ -6,7 +6,8 @@ if (isset($_POST["login"])) {
     if (register($_POST) > 0) {
         echo "<script> alert('Successful registration!'); </script>";
     } else {
-        return mysqli_error($connect);
+        echo "<script> alert('Failed registration!'); </script>";
+        mysqli_error($connect);
     }
 }
 ?>
@@ -27,7 +28,7 @@ if (isset($_POST["login"])) {
             <label for="username">Username</label>
             <input type="text" name="username" id="username" required>
             <label for="password">Password</label>
-            <input type="text" name="password" id="password" required>
+            <input type="password" name="password" id="password" required>
             <label for="gmail">gmail</label>
             <input type="text" name="gmail" id="gmail" required>
             <label for="telp">telp</label>

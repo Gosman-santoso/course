@@ -18,9 +18,9 @@ function register($data)
   }
 
   $password = password_hash($password, PASSWORD_DEFAULT);
-  mysqli_query($connect, "INSERT INTO user VALUES('', '$username', '$password', '$gmail', '$gender', $telp, '$photo', '$status') ");
+  mysqli_query($connect, "INSERT INTO user VALUES(NULL, '$username', '$password', '$gmail', '$gender', $telp, '$photo', '$status') ") or die(mysqli_error($connect));
 
-  return mysqli_affected_rows($connect);
+  return mysqli_affected_rows($connect) or die(mysqli_error($connect));
 }
 
 function registerAdmin($data)
@@ -41,7 +41,7 @@ function registerAdmin($data)
   }
 
   $password = password_hash($password, PASSWORD_DEFAULT);
-  mysqli_query($connect, "INSERT INTO `admin` VALUES('', '$username', '$password', '$gmail', '$gender', '$admin_id', '$photo', 'admin') ") or die(mysqli_error($connect));
+  mysqli_query($connect, "INSERT INTO `admin` VALUES(NULL, '$username', '$password', '$gmail', '$gender', '$admin_id', '$photo', 'admin') ") or die(mysqli_error($connect));
 
   return mysqli_affected_rows($connect);
 }
