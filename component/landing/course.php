@@ -1,12 +1,6 @@
 <?php
 include "connect.php";
 
-// pilih kursus database dengan status 1
-// status 1 artinya user harus login terlebih dahulu
-// status 0 tidak perlu login
-// urut berdasarkan tanggal yang paling baru
-// limit data sampai 6
-
 $query = "SELECT * FROM `course` WHERE status = 1 ORDER BY `course`.`post_date` DESC LIMIT 0,6";
 
 $data = mysqli_query($connect, $query) or die(mysqli_error($connect));
