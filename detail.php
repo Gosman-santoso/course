@@ -38,7 +38,7 @@ if (!isset($_SESSION["login"]) && $row['status'] == 1) {
           <p class="text-capitalize"><?= $rowAdmin["username"] ?></p>
           <p style="color: lightgray; font-size: 0.8rem; margin-left: 0.3rem; color: #4c4c4c;"> | <?= $row["post_date"] ?></p>
         </div>
-        <h1 style="margin-bottom: 1rem">Ini detail <?= $title ?></h1>
+        <h1 style="margin-bottom: 1rem"><?= $row['title'] ?></h1>
         <div class="img-container d-flex align-items-center" style="max-width: 100%; margin-bottom: 3em; border-radius: 10px; overflow: hidden;">
           <img src="public/img/thumbnail/<?= $row["cover"] ?>" alt="thumbnail" style="width: 100%;">
         </div>
