@@ -62,7 +62,7 @@ function ckeditor($data, $dataImg)
   if (!empty($editorContent) || $cover) {
     // $query = "UPDATE `course` SET `description` = '" . $editorContent . "' WHERE `course`.`id` = $idContent";
     // $query = "UPDATE `course` SET `description` = '" . $description . "' WHERE `course`.`id` = $idContent";
-    $query = "INSERT INTO `course` VALUES ('', '$courseId', '$adminId', '$title', '$description', 0, '$cover', '$linkVideo', '$tanggal', '$status')";
+    $query = "INSERT INTO `course` VALUES (NULL, '$courseId', '$adminId', '$title', '$description', 0, '$cover', '$linkVideo', '$tanggal', '$status')";
 
     $insert = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
