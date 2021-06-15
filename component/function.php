@@ -95,7 +95,7 @@ function upload($courseId, $dataImg)
     return false;
   }
 
-  $newName = $courseId . '-' . rand(1000, 9999) . $extentionImage;
+  $newName = $courseId . '-' . rand(1000, 9999) . '.' . $extentionImage;
 
   move_uploaded_file($tmp, 'public/img/thumbnail/' . $newName);
   return $newName;
