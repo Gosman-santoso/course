@@ -17,7 +17,7 @@ $isLogin = isset($_SESSION["login"]);
     <ul class="col-4 d-flex align-items-center justify-content-between list-style-none">
       <li><a href="index.php#home" class="text-decoration-none">Home</a></li>
       <li><a href="index.php#about" class="text-decoration-none">About</a></li>
-      <li><a href="index.php#course" class="text-decoration-none">Course</a></li>
+      <li><a href="index.php#free-course" class="text-decoration-none">Course</a></li>
 
     </ul>
 

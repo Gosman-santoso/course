@@ -7,7 +7,7 @@ $data = mysqli_query($connect, $query) or die(mysqli_error($connect));
 
 ?>
 
-<div class="course-section">
+<div class="course-section" id="course">
   <div class="course">
     <h1 class="lengthLg1">See our course - <p style="color: #25bb8d; display: inline-block; font-size: 22px">Need login</p>
     </h1>

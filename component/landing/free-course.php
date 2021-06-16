@@ -8,7 +8,7 @@ if (!$data) {
 }
 ?>
 
-<div class="course-section">
+<div class="course-section" id="free-course">
   <div class="course">
     <h1 class="lengthLg1">Our Popular Course - <p style="color: orange; display: inline-block; font-size: 22px">Free</p>
     </h1>

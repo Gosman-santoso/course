@@ -24,7 +24,7 @@ $datas = [
 ]
 ?>
 
-<div class="about-section">
+<div class="about-section" id="about">
   <div class="about row">
     <div class="col-12 col-md-6 col-lg-6 d-flex flex-column">
       <h1 class="lengthLg1">
