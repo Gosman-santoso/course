@@ -11,7 +11,7 @@ $result = mysqli_query($connect, $query) or die(mysqli_error($connect));
 $row = mysqli_fetch_array($result);
 
 $queryCourse = "SELECT * FROM course WHERE admin_id = '$idAdmin' ORDER BY `course`.`course_id` ASC";
-$result = mysqli_query($connect, $queryCourse) or die(mysqli_error($connect));
+$resultCourses = mysqli_query($connect, $queryCourse) or die(mysqli_error($connect));
 
 if (isset($_POST['submit'])) {
   $username = $_POST['username'];
@@ -168,32 +168,27 @@ if (isset($_POST['submit'])) {
         <h3>Your Course</h3>
         <div class="row">
           <?php
-          if (!$rowCourse = mysqli_fetch_array($result) || count($rowCourse) < 1) {
-          ?>
-            <img src="public/img/empty.jpg" alt="404" style="max-width: 20em; margin: auto;">
-            <p style="font-style: italic; text-align: center; margin-top: -2em">You dont have any course</p>
-            <?php } else {
-            while ($rowCourse = mysqli_fetch_array($result)) : ?>
-              <div class="col-6 col-md-4 col-lg-4 card">
-                <div class="card-image">
-                  <img src="public/img/thumbnail/<?= $rowCourse["cover"] ?>" alt="cover">
-                </div>
-                <p class="tag text-capitalize cursor-pointer"><a href="categories.php?name=<?= $rowCourse['course_id'] ?>" class="text-decoration-none"><?= $rowCourse['course_id'] ?></a></p>
-                <h5 class="lengthMd1 text-capitalize text-overflow dot-2 title"><a href="detail.php?title=<?= strtolower($rowCourse["title"]); ?>&id=<?= $rowCourse["id"] ?>" class="text-decoration-none cursor-pointer" style="color: rgb(24, 24, 24);"><?= $rowCourse["title"] ?></a></h5>
-                <p class="lengthSm3 text-capitalize status">Online class</p>
-                <div class="seperate d-flex justify-content-between align-items-center">
-                  <div class="rating d-flex">
-                    <?php for ($i = 1; $i <= 5; $i++) : ?>
-                      <i class="fas fa-star"></i>
-                    <?php endfor; ?>
-                  </div>
-                  <a href="detail.php?title=<?= strtolower($rowCourse["title"]); ?>&id=<?= $rowCourse["id"] ?>">
-                    <i class="fas fa-chevron-circle-right"></i>
-                  </a>
-                </div>
+          while ($rowCourse = mysqli_fetch_array($resultCourses)) : ?>
+            <div class="col-6 col-md-4 col-lg-4 card">
+              <div class="card-image">
+                <img src="public/img/thumbnail/<?= $rowCourse["cover"] ?>" alt="cover">
               </div>
+              <p class="tag text-capitalize cursor-pointer"><a href="categories.php?name=<?= $rowCourse['course_id'] ?>" class="text-decoration-none"><?= $rowCourse['course_id'] ?></a></p>
+              <h5 class="lengthMd1 text-capitalize text-overflow dot-2 title"><a href="detail.php?title=<?= strtolower($rowCourse["title"]); ?>&id=<?= $rowCourse["id"] ?>" class="text-decoration-none cursor-pointer" style="color: rgb(24, 24, 24);"><?= $rowCourse["title"] ?></a></h5>
+              <p class="lengthSm3 text-capitalize status">Online class</p>
+              <div class="seperate d-flex justify-content-between align-items-center">
+                <div class="rating d-flex">
+                  <?php for ($i = 1; $i <= 5; $i++) : ?>
+                    <i class="fas fa-star"></i>
+                  <?php endfor; ?>
+                </div>
+                <a href="detail.php?title=<?= strtolower($rowCourse["title"]); ?>&id=<?= $rowCourse["id"] ?>">
+                  <i class="fas fa-chevron-circle-right"></i>
+                </a>
+              </div>
+            </div>
           <?php endwhile;
-          } ?>
+          ?>
         </div>
       </div>
 

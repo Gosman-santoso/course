@@ -322,6 +322,7 @@ $primary-color: #25bb8d;
 
       p.text-description {
         margin: 4em 0;
+        padding: 0 1em;
       }
 
       h1.text-hero {
@@ -330,6 +331,11 @@ $primary-color: #25bb8d;
 
       .search-section {
         width: 80%;
+        .search {
+          button {
+            padding: 0;
+          }
+        }
       }
     }
   }
@@ -338,6 +344,8 @@ $primary-color: #25bb8d;
     margin-top: 3em;
 
     .about {
+      width: 90%;
+
       p.text-description {
         margin: 1rem 0;
       }
@@ -356,6 +364,8 @@ $primary-color: #25bb8d;
 
   .course-section {
     .course {
+      width: 82%;
+
       p.text-description {
         width: 100%;
       }

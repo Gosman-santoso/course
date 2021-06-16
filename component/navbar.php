@@ -15,9 +15,9 @@ $isLogin = isset($_SESSION["login"]);
   <div class="navbar row">
     <h1 class="col-6 col-md-4 col-lg-4 navbar-title d-flex align-items-center"><a href="index.php" class="text-decoration-none"><span class="color-primary">Nama</span> Course</a></h1>
     <ul class="col-4 d-flex align-items-center justify-content-between list-style-none">
-      <li><a href="index.php" class="text-decoration-none">Home</a></li>
-      <li><a href="" class="text-decoration-none">About</a></li>
-      <li><a href="" class="text-decoration-none">Course</a></li>
+      <li><a href="index.php#home" class="text-decoration-none">Home</a></li>
+      <li><a href="index.php#about" class="text-decoration-none">About</a></li>
+      <li><a href="index.php#course" class="text-decoration-none">Course</a></li>
 
     </ul>
 

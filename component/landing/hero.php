@@ -6,7 +6,7 @@
       <div class="search">
         <form action="search.php?search=<?= $_GET['search'] ?>" method="get" class="w-100 d-flex">
           <input type="text" placeholder="Type your course" name="search">
-          <button class="cursor-pointer">Search Course</button>
+          <button class="cursor-pointer">Search</button>
         </form>
       </div>
     </div>

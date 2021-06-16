@@ -12,7 +12,7 @@ if (!$data) {
   <div class="course">
     <h1 class="lengthLg1">Our Popular Course - <p style="color: orange; display: inline-block; font-size: 22px">Free</p>
     </h1>
-    <p class="lengthMd1 text-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eveniet hic suscipit obcaecati praesentium natus!</p>
+    <p class="lengthMd1 text-description">Here is our popular course that might you want to learn, you don't need to login to access this</p>
 
     <div class="row">
       <?php
